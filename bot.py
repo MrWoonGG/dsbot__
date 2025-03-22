@@ -6,22 +6,11 @@ from views import TemplateOrder
 import threading
 # ============================================
 
-TOKEN = "ВВЕДИТЕ ТОКЕН СЮДА"
-GUILD_IDS = []
+TOKEN = "MTM1MjI1MjExOTY4MzY5ODc0OQ.GNBht6.2b--nrO9vvVzPiK9DUFNwXfdPhqFXSZ_l2h9QQ"
+GUILD_IDS = [1340550027126505513]
 
 # ============================================
-def replit_keep_alive():
-    from flask import Flask
-    app = Flask('')
 
-    @app.route('/')
-    def home():
-        return "I'm alive"
-
-    app.run()
-
-
-threading.Thread(target=replit_keep_alive).start()
 # ============================================
 
 logger = Logger(debug_enabled=True)
